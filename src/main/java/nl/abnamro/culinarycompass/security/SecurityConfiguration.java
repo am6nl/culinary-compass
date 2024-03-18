@@ -25,7 +25,7 @@ public class SecurityConfiguration {
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(authorize -> authorize.anyRequest().authenticated())
                 .formLogin(form -> {
-                    form.defaultSuccessUrl("/swagger-ui.html");
+                    form.defaultSuccessUrl("/culinary/swagger-ui.html");
                 })
                 .httpBasic(Customizer.withDefaults())
                 .authenticationProvider(testAuthenticationProvider)

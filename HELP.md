@@ -9,7 +9,7 @@ Culinary Compass is a comprehensive solution for food enthusiasts and culinary e
 - **Full-Text Search**: Easily find recipes based on keywords, ingredients, or dietary restrictions.
 - **Filtering and Sorting**: Narrow down your search with customizable filtering options, including food type, servings, and specific ingredients.
 - **Ready to deploy** Easily deploy the App on Azure App Services using GitHub Actions.
-- **Live Demo** Test the live demo on Azure App Service (http://culinary-compass.azurewebsites.net/swagger-ui.html)
+- **Live Demo** Test the live demo on Azure App Service (https://culinary-compass.azurewebsites.net/culinary/swagger-ui.html)
 - **Resource Management**  Create your required resources on Azure utilizing Azure Bicep(IaC).
 - **Database Management** Manage MongoDB by Liquibase.
 - **Security** Protect APIs utilizing a basic and minimal Spring Security config.

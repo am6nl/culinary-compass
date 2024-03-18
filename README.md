@@ -74,7 +74,7 @@ docker-compose up --build
 
 3. **Accessing the API**
 
-   Once the containers are up, the API's Swagger page is accessible at: http://localhost:8992/swagger-ui.html.
+   Once the containers are up, the API's Swagger page is accessible at: http://localhost:8992/culinary/swagger-ui.html.
 
 ### Running Without Docker
 To run the application without Docker, ensure your local environment meets the prerequisites (Java 17+, Maven) and you have a MongoDB instance accessible.

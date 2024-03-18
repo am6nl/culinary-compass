@@ -1,0 +1,23 @@
+spring:
+  data:
+    mongodb:
+      uri: ${MONGO_URL}
+      database: culinary
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-dev.yaml
+    enabled: true
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+server:
+  port: 8992
+  servlet:
+    context-path: /culinary
+
+repository:
+  users:
+    - role: admin
+      username: ${ADMIN_USER}
+      password: ${ADMIN_PASS}

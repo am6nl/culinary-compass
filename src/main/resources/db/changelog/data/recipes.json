@@ -1,0 +1,182 @@
+[
+  {
+    "id": "1",
+    "name": "Vegan Stir-Fry",
+    "description": "A healthy mix of rice and vegetables.",
+    "foodType": "VEGAN",
+    "servings": 2,
+    "instruction": "Stir-fry vegetables in olive oil, serve with rice. Requires a stove.",
+    "ingredients": [
+      {
+        "id": "10",
+        "name": "Olive Oil",
+        "quantity": "2 tbsp"
+      },
+      {
+        "id": "23",
+        "name": "Rice",
+        "quantity": "1 cup"
+      },
+      {
+        "id": "3",
+        "name": "Salt",
+        "quantity": "1 tsp"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Vegan Pancakes",
+    "description": "Fluffy pancakes made completely vegan.",
+    "foodType": "VEGAN",
+    "servings": 4,
+    "instruction": "Mix all ingredients, cook on a griddle until golden brown.",
+    "ingredients": [
+      {
+        "id": "1",
+        "name": "Flour",
+        "quantity": "1 cup"
+      },
+      {
+        "id": "2",
+        "name": "Sugar",
+        "quantity": "2 tbsp"
+      },
+      {
+        "id": "7",
+        "name": "Baking Powder",
+        "quantity": "1 tsp"
+      },
+      {
+        "id": "12",
+        "name": "Water",
+        "quantity": "1 cup"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Vegan Pasta Alfredo",
+    "description": "Creamy Alfredo pasta made with cashew sauce.",
+    "foodType": "VEGAN",
+    "servings": 4,
+    "instruction": "Blend cashews with nutritional yeast, garlic, and water. Mix with cooked pasta.",
+    "ingredients": [
+      {
+        "id": "24",
+        "name": "Pasta",
+        "quantity": "400g"
+      },
+      {
+        "id": "12",
+        "name": "Water",
+        "quantity": "1 cup"
+      },
+      {
+        "id": "2",
+        "name": "Sugar",
+        "quantity": "1 tsp"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Vegetarian Pizza",
+    "description": "Homemade pizza topped with mozzarella cheese and vegetables.",
+    "foodType": "VEGETARIAN",
+    "servings": 4,
+    "instruction": "Spread sauce on dough, top with cheese and veggies, bake until crust is golden.",
+    "ingredients": [
+      {
+        "id": "27",
+        "name": "Mozzarella Cheese",
+        "quantity": "200g"
+      },
+      {
+        "id": "25",
+        "name": "Tomato Sauce",
+        "quantity": "1/2 cup"
+      },
+      {
+        "id": "13",
+        "name": "Basil",
+        "quantity": "1 tbsp"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Cheese and Spinach Pasta",
+    "description": "Creamy pasta with spinach and melted cheese.",
+    "foodType": "VEGETARIAN",
+    "servings": 2,
+    "instruction": "Cook pasta, sauté spinach in butter, mix with pasta and cheese.",
+    "ingredients": [
+      {
+        "id": "24",
+        "name": "Pasta",
+        "quantity": "200g"
+      },
+      {
+        "id": "6",
+        "name": "Butter",
+        "quantity": "2 tbsp"
+      },
+      {
+        "id": "26",
+        "name": "Cheddar Cheese",
+        "quantity": "100g"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Vegetarian Quiche",
+    "description": "A delicious quiche filled with eggs, cheese, and vegetables.",
+    "foodType": "VEGETARIAN",
+    "servings": 6,
+    "instruction": "Pre-bake pie crust, fill with egg mixture and bake until set.",
+    "ingredients": [
+      {
+        "id": "4",
+        "name": "Eggs",
+        "quantity": "4"
+      },
+      {
+        "id": "27",
+        "name": "Mozzarella Cheese",
+        "quantity": "150g"
+      },
+      {
+        "id": "13",
+        "name": "Basil",
+        "quantity": "2 tbsp"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Chicken Alfredo",
+    "description": "Creamy Alfredo pasta with succulent chicken breast.",
+    "foodType": "NON_VEGETARIAN",
+    "servings": 4,
+    "instruction": "Cook chicken, prepare Alfredo sauce, mix with cooked pasta.",
+    "ingredients": [
+      {
+        "id": "16",
+        "name": "Chicken Breast",
+        "quantity": "2 pieces"
+      },
+      {
+        "id": "24",
+        "name": "Pasta",
+        "quantity": "400g"
+      },
+      {
+        "id": "30",
+        "name": "Heavy Cream",
+        "quantity": "1 cup"
+      }
+    ]
+  }
+]

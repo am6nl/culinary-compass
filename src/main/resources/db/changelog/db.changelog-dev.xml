@@ -1,0 +1,298 @@
+<?xml version="1.0"
+        encoding="UTF-8" ?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet id="1" author="Amir Najmi">
+        <ext:createCollection collectionName="recipe"/>
+    </changeSet>
+    <changeSet id="2" author="Amir Najmi">
+        <ext:createCollection collectionName="ingredient"/>
+    </changeSet>
+    <changeSet id="3" author="Amir Najmi">
+        <ext:insertMany collectionName="ingredient">
+            <ext:documents>
+                [
+                {"name": "Flour", "description": "Used for baking and cooking."},
+                {"name": "Sugar", "description": "Sweet-tasting, soluble carbohydrates."},
+                {"name": "Salt", "description": "A mineral essential for human life."},
+                {"name": "Eggs", "description": "Eggs from chickens, used in cooking."},
+                {"name": "Milk", "description": "A nutrient-rich liquid food produced by mammals."},
+                {"name": "Butter", "description": "A dairy product made from churning milk."},
+                {"name": "Baking Powder", "description": "A dry leavening agent used in baking."},
+                {"name": "Vanilla Extract", "description": "A solution containing the flavor compound
+                vanillin."},
+                {"name": "Cocoa Powder", "description": "A powder made from roasted and ground cacao
+                seeds."},
+                {"name": "Olive Oil", "description": "Oil pressed from olives, used in cooking and
+                dressings."},
+                {"name": "Yeast", "description": "A microorganism used in baking and brewing."},
+                {"name": "Water", "description": "A transparent, tasteless, odorless, and nearly colorless
+                chemical substance."},
+                {"name": "Basil", "description": "A culinary herb used in cooking."},
+                {"name": "Parsley", "description": "A herb used in cooking for its flavor."},
+                {"name": "Oregano", "description": "A herb used in Italian and Mexican cuisine."},
+                {"name": "Chicken Breast", "description": "A cut of chicken used in various dishes."},
+                {"name": "Beef", "description": "Meat from cattle, used in cooking."},
+                {"name": "Pork", "description": "Meat from pigs, used in cooking."},
+                {"name": "Lamb", "description": "Meat from young sheep."},
+                {"name": "Salmon", "description": "A species of fish commonly eaten as food."},
+                {"name": "Tuna", "description": "A saltwater fish used in various cuisines."},
+                {"name": "Shrimp", "description": "A small sea creature with a shell."},
+                {"name": "Rice", "description": "A cereal grain consumed as a staple food."},
+                {"name": "Pasta", "description": "A type of Italian noodle made from wheat."},
+                {"name": "Tomato Sauce", "description": "A sauce made from tomatoes, onions, and herbs."},
+                {"name": "Cheddar Cheese", "description": "A relatively hard, off-white, sometimes
+                sharp-tasting cheese."},
+                {"name": "Mozzarella Cheese", "description": "A traditionally southern Italian cheese made
+                from Italian buffalo's milk."},
+                {"name": "Parmesan Cheese", "description": "A hard, granular cheese named after the areas of
+                Parma."},
+                {"name": "Sour Cream", "description": "A dairy product obtained by fermenting regular
+                cream."},
+                {"name": "Heavy Cream", "description": "Cream with a high butterfat content."}
+                ]
+            </ext:documents>
+        </ext:insertMany>
+    </changeSet>
+    <changeSet id="4" author="Amir Najmi">
+        <ext:insertMany collectionName="recipe">
+            <ext:file>
+
+            </ext:file>
+            <ext:documents>
+                [
+                {
+                "name": "Vegan Stir-Fry",
+                "description": "A healthy mix of rice and vegetables.",
+                "foodType": "VEGAN",
+                "servings": 2,
+                "instruction": "Stir-fry vegetables in olive oil, serve with rice. Requires a stove.",
+                "ingredients": [
+                {
+                "name": "Olive Oil",
+                "quantity": "2 tbsp"
+                },
+                {
+                "name": "Rice",
+                "quantity": "1 cup"
+                },
+                {
+                "name": "Salt",
+                "quantity": "1 tsp"
+                }
+                ]
+                },
+                {
+                "name": "Vegan Pancakes",
+                "description": "Fluffy pancakes made completely vegan.",
+                "foodType": "VEGAN",
+                "servings": 4,
+                "instruction": "Mix all ingredients, cook on a griddle until golden brown.",
+                "ingredients": [
+                {
+                "name": "Flour",
+                "quantity": "1 cup"
+                },
+                {
+                "name": "Sugar",
+                "quantity": "2 tbsp"
+                },
+                {
+                "name": "Baking Powder",
+                "quantity": "1 tsp"
+                },
+                {
+                "name": "Water",
+                "quantity": "1 cup"
+                }
+                ]
+                },
+                {
+                "name": "Vegan Pasta Alfredo",
+                "description": "Creamy Alfredo pasta made with cashew sauce.",
+                "foodType": "VEGAN",
+                "servings": 4,
+                "instruction": "Blend cashews with nutritional yeast, garlic, and water. Mix with cooked pasta.",
+                "ingredients": [
+                {
+                "name": "Pasta",
+                "quantity": "400g"
+                },
+                {
+                "name": "Water",
+                "quantity": "1 cup"
+                },
+                {
+                "name": "Sugar",
+                "quantity": "1 tsp"
+                }
+                ]
+                },
+                {
+                "name": "Vegetarian Pizza",
+                "description": "Homemade pizza topped with mozzarella cheese and vegetables.",
+                "foodType": "VEGETARIAN",
+                "servings": 4,
+                "instruction": "Spread sauce on dough, top with cheese and veggies, bake until crust is golden.",
+                "ingredients": [
+                {
+                "name": "Mozzarella Cheese",
+                "quantity": "200g"
+                },
+                {
+                "name": "Tomato Sauce",
+                "quantity": "1/2 cup"
+                },
+                {
+                "name": "Basil",
+                "quantity": "1 tbsp"
+                }
+                ]
+                },
+                {
+                "name": "Cheese and Spinach Pasta",
+                "description": "Creamy pasta with spinach and melted cheese.",
+                "foodType": "VEGETARIAN",
+                "servings": 2,
+                "instruction": "Cook pasta, sauté spinach in butter, mix with pasta and cheese.",
+                "ingredients": [
+                {
+                "name": "Pasta",
+                "quantity": "200g"
+                },
+                {
+                "name": "Butter",
+                "quantity": "2 tbsp"
+                },
+                {
+                "name": "Cheddar Cheese",
+                "quantity": "100g"
+                }
+                ]
+                },
+                {
+                "name": "Vegetarian Quiche",
+                "description": "A delicious quiche filled with eggs, cheese, and vegetables.",
+                "foodType": "VEGETARIAN",
+                "servings": 6,
+                "instruction": "Pre-bake pie crust, fill with egg mixture and bake until set.",
+                "ingredients": [
+                {
+                "name": "Eggs",
+                "quantity": "4"
+                },
+                {
+                "name": "Mozzarella Cheese",
+                "quantity": "150g"
+                },
+                {
+                "name": "Basil",
+                "quantity": "2 tbsp"
+                }
+                ]
+                },
+                {
+                "name": "Chicken Alfredo",
+                "description": "Creamy Alfredo pasta with succulent chicken breast.",
+                "foodType": "NON_VEGETARIAN",
+                "servings": 4,
+                "instruction": "Cook chicken, prepare Alfredo sauce, mix with cooked pasta.",
+                "ingredients": [
+                {
+                "name": "Chicken Breast",
+                "quantity": "2 pieces"
+                },
+                {
+                "name": "Pasta",
+                "quantity": "400g"
+                },
+                {
+                "name": "Heavy Cream",
+                "quantity": "1 cup"
+                }
+                ]
+                },
+                {
+                "name": "Grilled Tofu Skewers",
+                "description": "Marinated tofu grilled to perfection on skewers with vegetables.",
+                "foodType": "VEGAN",
+                "servings": 4,
+                "instruction": "Marinate tofu in a blend of soy sauce, olive oil, and garlic. Skewer with bell peppers and onions, then grill.",
+                "ingredients": [
+                {
+                "name": "Soy Sauce",
+                "quantity": "3 tbsp"
+                },
+                {
+                "name": "Olive Oil",
+                "quantity": "1 tsp"
+                },
+                {
+                "name": "Garlic",
+                "quantity": "2 cloves"
+                }
+                ]
+                },
+                {
+                "name": "Spinach and Ricotta Stuffed Shells",
+                "description": "Jumbo pasta shells filled with spinach and ricotta, baked in tomato sauce.",
+                "foodType": "VEGETARIAN",
+                "servings": 4,
+                "instruction": "Fill boiled pasta shells with a mixture of ricotta, spinach, and Parmesan. Cover with tomato sauce and bake.",
+                "ingredients": [
+                {
+                "name": "Pasta Shells",
+                "quantity": "18 shells"
+                },
+                {
+                "name": "Ricotta",
+                "quantity": "200g"
+                },
+                {
+                "name": "Spinach",
+                "quantity": "50g"
+                }
+                ]
+                },
+                {
+                "name": "Beef and Broccoli Stir-Fry",
+                "description": "Tender beef slices stir-fried with broccoli in a savory sauce.",
+                "foodType": "NON_VEGETARIAN",
+                "servings": 4,
+                "instruction": "Stir-fry beef and broccoli in a mixture of soy sauce, ginger, and garlic.",
+                "ingredients": [
+                {
+                "name": "Beef",
+                "quantity": "500g"
+                },
+                {
+                "name": "Soy Sauce",
+                "quantity": "2 tbsp"
+                },
+                {
+                "name": "Ginger",
+                "quantity": "1 tsp"
+                }
+                ]
+                }
+                ]
+            </ext:documents>
+        </ext:insertMany>
+    </changeSet>
+    <changeSet id="5" author="Amir Najmi">
+        <ext:createIndex collectionName="recipe">
+            <ext:keys>
+                <![CDATA[{ "instruction": "text" }]]>
+            </ext:keys>
+            <ext:options>
+                <![CDATA[{ "name": "text_search_instruction" }]]>
+            </ext:options>
+        </ext:createIndex>
+    </changeSet>
+</databaseChangeLog>
